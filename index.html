@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            height: 4000px;
+        }
+        
+        .home {
+            background-image: url("img/Barber\ \(2\).jpg");
+            height: 100vh;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            padding: 150px;
+            position: relative;
+            z-index: -2;
+        }
+        
+        .home::before {
+            content: "";
+            position: absolute;
+            background: #16222A;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #3A6073, #16222A);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+            z-index: -1;
+            backdrop-filter: 15px;
+        }
+        
+        .home-content {
+            width: 450px;
+        }
+        
+        .home-content-title {
+            color: #f7f7f7f7;
+        }
+        
+        .home-content-para {
+            color: #f7f7f7f7;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1 class="home-content-title">Burma Barbershop</h1>
+            <p class="home-content-para">A barber is a person whose occupation is mainly to cut, dress, groom, style and shave men's and boys' hair or beards. A barber's place of work is known as a "barbershop" or a "barber's". Barbershops are also places of social interaction and
+                public discourse. In some instances, barbershops are also public fora. They are the locations of open debates, voicing public concerns, and engaging citizens in discussions about contemporary issues.</p>
+        </div>
+        <section class="one">
+            <div class="one-part">
+                <img src="img/Barber (1).jpg" alt="" class="one-img">
+                <p class="one-para">Beard wax</p>
+            </div>
+            <div class="one-part">
+                <img src="img/Barber (4).jpg" alt="" class="one-img">
+                <p> </p>
+            </div>
+            <div class="one-part">
+                <img src="img/Barber menu.jpg" alt="" class="one-img">
+                <p></p>
+            </div>
+        </section>
+</body>
+
+</html>
